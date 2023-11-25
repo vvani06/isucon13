@@ -23,3 +23,6 @@ ALTER TABLE `tags` auto_increment = 1;
 ALTER TABLE `livecomments` auto_increment = 1;
 ALTER TABLE `livestreams` auto_increment = 1;
 ALTER TABLE `users` auto_increment = 1;
+
+-- インデックス追加 #6
+ALTER TABLE livestream_tags ADD INDEX livestream_tags_livestream_id (livestream_id);
