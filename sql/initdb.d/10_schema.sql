@@ -104,3 +104,6 @@ CREATE TABLE `reactions` (
   `emoji_name` VARCHAR(255) NOT NULL,
   `created_at` BIGINT NOT NULL
 ) ENGINE=InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+
+-- pt-query-digest で初回計測したスロークエリの対策
+CREATE INDEX livestream_tags_livestream_id ON livestream_tags(livestream_id);
