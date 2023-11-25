@@ -187,9 +187,9 @@ module Isupipe
 
     # 初期化
     post '/api/initialize' do
-      out, status = Open3.capture2e('../sql/init.sh')
+      out, status = Open3.capture2e('../sql/init_2.sh')
       unless status.success?
-        logger.warn("init.sh failed with out=#{out}")
+        logger.warn("init_2.sh failed with out=#{out}")
         halt 500
       end
 
