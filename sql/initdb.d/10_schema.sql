@@ -110,3 +110,5 @@ CREATE INDEX livestream_tags_livestream_id ON livestream_tags(livestream_id);
 CREATE INDEX livecomments_livestream_id ON livecomments(livestream_id);
 CREATE INDEX reactions_livestream_id ON reactions(livestream_id);
 CREATE INDEX icons_user_id ON icons(user_id);
+CREATE INDEX livestreams_user_id ON icons(user_id);
+CREATE INDEX themes_user_id ON themes(user_id);
